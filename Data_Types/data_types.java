@@ -56,11 +56,6 @@ class example{
 
 // 3. Literal: 
 
-/*
- 
-
-
- */
 class lit{
     void litexample()
     {   
