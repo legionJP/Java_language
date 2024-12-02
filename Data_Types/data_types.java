@@ -66,6 +66,16 @@ class lit{
     {   
         int numb = 0b101;
         System.out.println(numb);
-        System.out.println("Literal");
+
+        int numc = 1_00_00_000;
+        System.out.println(numc);
+
+        double numd = 12e10;
+        System.out.println(numd);
+        
+        char c1 = 'a';
+        c1++;
+        System.out.println(c1);
+        
     }
 }
