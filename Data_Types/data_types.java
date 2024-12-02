@@ -39,6 +39,7 @@ here double quote is for string
 
 4.Boolean: True, Flase  keyword { not the (0,1)}
 bool b= true; 
+# default value assigned to the var of bollean types is : False
 */
 
 class example{
@@ -46,7 +47,7 @@ class example{
         int n1 = 9;
         byte b =123;
         short sh= 555;
-        long l = 5867l;
+        long l = 5867l; //long
         float f = 5.8f;
         char c = 'k';
         boolean bl = true;
