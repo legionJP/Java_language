@@ -1,5 +1,8 @@
 package Operators;
 
+// # Airthmetic Operators
+
+
 class operators{
 public static void main(String a[])
 {
@@ -30,19 +33,46 @@ public static void main(String a[])
     //so gives 2 
     //int res1 = ++n1;       // it gives 3 , pre increament 
     System.out.println(res1);
+ 
+    //instantiating and obj for the rl_op method
+    relational_op rl_comp = new relational_op();
+    rl_comp.rl_op();
+
 }
 }
 /*
- here is diff b/w post and pre increament when we assign an fetch the value
+ here the diff b/w post and pre increament when we assign an fetch the value
  they behave differently when we do post icreament the values is first fetch and then increment 
  in thwe pre incremanet value is fetched then increament so it gives 3
 */
 
 
-//Operators
+// Relational Operators
 
-// # Airthmetic Operators
+
 /*
- 
 < , > , == , !=
+
+if 7<5---> f (output is boolean )
 */
+
+class relational_op
+{
+    void rl_op()
+    {
+        System.out.println("Re");
+        int x =6;
+        int y = 5;
+        boolean comp = x<=y;
+        //boolean comp = x>=y;
+        System.out.println(comp);
+    }
+}
+
+// Logical Operator
+/*
+1. AND: 
+2. OR:  
+
+
+ */
