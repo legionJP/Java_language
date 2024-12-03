@@ -38,6 +38,9 @@ public static void main(String a[])
     relational_op rl_comp = new relational_op();
     rl_comp.rl_op();
 
+    logical_op lg_comp = new logical_op();
+    lg_comp.lg_op();
+
 }
 }
 /*
@@ -69,8 +72,24 @@ class relational_op
 
 // Logical Operator
 /*
-1. AND: 
-2. OR:  
-
+1. AND: both condition  '&' ---> 'Short circuit- && ' ---> x.y && a<b
+2. OR:  any condtion true to get true  "|"(short circuit -- ||) ---> x.y || a<b
+3. NOT: 
 
  */
+
+ class logical_op
+{
+    void lg_op()
+    {
+        System.out.println("Re");
+        int x =6;
+        int y = 5;
+        int a= 6;
+        int b = 9;
+        boolean result = x<y || a<b || a>1;
+        //boolean result = a>b;
+        System.out.println(result);
+        System.out.println(!result);
+    }
+}
