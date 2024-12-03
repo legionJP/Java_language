@@ -49,11 +49,9 @@ public static void main(String a[])
 
 // Relational Operators
 
-
 /*
-< , > , == , !=
-
-if 7<5---> f (output is boolean )
+1. < , > , == , !=
+2. if 7<5---> f (output is boolean )
 */
 
 class relational_op
