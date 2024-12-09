@@ -14,9 +14,18 @@ public class looping {
                 System.out.println("Hello " +j);
                 j++;
             }
-        }
-        System.out.println("Bye" + i); // at the time of being false
-
+            System.out.println("Bye" + i); // at the time of being false
+        }    
+        // Do- While
+           int k=1;
+           do
+           {
+            System.out.println("Do While "+k);
+            k++;
+           }
+           while(k<=4);
+    
+// register the class object
     forloop f_Forloop = new forloop();
     f_Forloop.floop();
     }
@@ -43,3 +52,5 @@ class forloop{
       }
     }
 } 
+
+// When to use the which Loop
