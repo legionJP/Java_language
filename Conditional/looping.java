@@ -53,4 +53,7 @@ class forloop{
     }
 } 
 
-// When to use the which Loop
+// When to use the which Loop:
+// If know how many iteration use for loop
+// for reading the file use While
+// Do-while when u need to execute for the limited times
