@@ -18,12 +18,15 @@ public class Array_MultiD {
             System.out.println();
         }
 
-        // Enhanced for loop
-        for(int n[]: nums)   // n is array of single dimension
-        {
+        // Enhanced for loop is used to iterate over 
+        // the elements of the nums array and print them.
+        
+        System.out.println("This is Enhanced loop: ");
+        for(int n[]: nums)   // n is array of single dimension from multi D of nums
+        {   
             for(int m:n)
             {
-                System.out.println(m + "");
+                System.out.print(m+ " ");
             }
         System.out.println();
         }
