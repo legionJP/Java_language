@@ -17,5 +17,12 @@ public class looping {
         }
         System.out.println("Bye" + i); // at the time of being false
 
+
+
+        // Do While Lop
+
+        
+
     }
 }
+
