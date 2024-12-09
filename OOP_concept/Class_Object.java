@@ -1,7 +1,5 @@
 package OOP_concept;
 
-import java.nio.channels.NetworkChannel;
-
 class Calc 
 {       
         //var in class
@@ -44,7 +42,7 @@ public class Class_Object {
         System.out.println(result2);
 
 // Creating the method ref var and obj in main class
-        
+
        jmethod obj = new jmethod();  //Here obj is reference var for jmethod
        obj.getPen(10);
        obj.javam();
