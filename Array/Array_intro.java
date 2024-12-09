@@ -1,6 +1,6 @@
 package Array;
 
-public class java_array
+public class Array_intro
 {   
     public static void main(String[] args)
     {
@@ -19,15 +19,18 @@ public class java_array
         System.out.println(nums1[1]);
 
         nums1[0] =4;
-        nums1[1] =6;
-        nums1[2] =6;
-        nums1[3] =6;
-        nums1[4] =6;
+        nums1[1] =2;
+        nums1[2] =3;
+        nums1[3] =5;
+        nums1[4] =7;
         System.out.println(nums1[1]);
+       
+        // Printing the all the values in the array
 
-
-
-
+        for(int i=0 ;i<5; i++)
+        {
+            System.out.println("Value of array is " + nums1[i]);
+        }
 
 
     }
