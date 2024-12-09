@@ -1,5 +1,7 @@
 package OOP_concept;
 
+import java.nio.channels.NetworkChannel;
+
 class Calc 
 {       
         //var in class
@@ -16,7 +18,7 @@ class Calc
 
 
 public class Class_Object {
-    public static void main(String a[])
+    public static void main(String a[])  // Start of the Executions main
     {   
         System.out.println("OOPS in java");
  
@@ -27,7 +29,8 @@ public class Class_Object {
         // System.out.println(result);
     
         // creating the object of calc class
-        Calc calc = new Calc();    // calc is type of Calc like int 5
+        Calc calc = new Calc();   
+        // calc is type of Calc refrence variable like int 5
 
         //create the new to consume thew space for the object of type Clac()
 
@@ -40,18 +43,57 @@ public class Class_Object {
         System.out.println(result);
         System.out.println(result2);
 
+// Creating the method ref var and obj in main class
+        
+       jmethod obj = new jmethod();  //Here obj is reference var for jmethod
+       obj.getPen(10);
+       obj.javam();
 
+       String str = obj.getPen(result2);
+       System.out.println(str);
+
+
+
+    }
+}
+
+//Methods
+
+class jmethod 
+{
+    public void javam() //only for exectuion not retruning 
+    { 
+        System.out.println("Comp it  is java's method ");
+    }
+    
+    public String getPen(int cost)
+    {
+        if(cost<=10)
+            return "Pen";
+
+         return "Nothing";    
     }
 }
 
 
 
-//Objects: Properties and Behaviour 
+//1. Objects: Properties and Behaviour 
 
-// class files is complied in byte code as blueprint
+//2. Class files is complied in byte code as blueprint
 // goes to the jvm and jvm creates the objects
 
+//3. Method:
 
-/*--------------------------------------------------------------------- */
 
-// JDK --- Tool
+
+/*--------------------------------------------------------------------------- */
+
+// JDK --- Tool --- > Upper layer includes the JVM, JRE but on the client machine 
+// By default it will have the JVM, JRE
+
+// JVM ---  It compile the code and run byte code 
+
+// JRE ---> IMPORT THE extra file or class, It's part of the JRE
+// Need extra file like methods or modules ---
+
+/*--------------------------------------------------------------------------- */
