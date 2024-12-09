@@ -17,7 +17,9 @@ public class ternary {
         //    result = 20;
 
         // using the ternary operator
-        result = n%2==0 ? 1 : 0;
+        
+        result = n%2==0 ? 1 : 0;  
+        //if ? --> true print 1 , else false (:) print 0
         
         System.out.println(result);   
     }
