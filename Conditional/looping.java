@@ -49,7 +49,9 @@ class forloop{
             System.out.println(" "+(j+8)+ "-" + (j+9));
 
         }
+        
       }
+
     }
 } 
 
