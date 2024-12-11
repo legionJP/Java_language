@@ -30,6 +30,25 @@ public class String_Java
         str1 = str1 + " Java";
         System.out.println(str1);
 
+
+      // String Buffer 
+     // StringBuffer sb =new StringBuffer();
+      StringBuffer sb =new StringBuffer("JP PAL");
+      System.out.println(sb.capacity());  // String Buffer gives the 16 bit/byte ? extra size 
+      System.out.println(sb);
+
+      sb.deleteCharAt(1);
+      sb.insert(2, "Pal ");
+      sb.setLength(29);
+      // Ensure capacity 
+
+      // Change back from string Buffer to String
+      String str= sb.toString();
+      System.out.println(str); //store in str
+
+
+// String Builder : String builkder is not thread safe but the string buffer is
+      
     }
     
 }

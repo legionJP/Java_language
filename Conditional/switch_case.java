@@ -39,7 +39,7 @@ public class switch_case {
             case 7:
                 System.out.println("Day7- Sun");
                 break;        
-            default:
+        default:
                 System.out.println("Enter the valid Day ");
 
         }
