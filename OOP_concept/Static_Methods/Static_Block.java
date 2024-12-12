@@ -7,6 +7,7 @@ class Mobile1{
         static String name;
 
 // initialize var. inside the constructor
+
 // constructor
 
     public Mobile1()
