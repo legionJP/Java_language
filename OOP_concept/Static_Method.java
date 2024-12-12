@@ -17,9 +17,31 @@ class Mobile
         System.out.println(Name + " ," + Name1+ ":" + price + ":" + brand);
     }
 
+    // Static Method
+    // You can call the static directly with the class Name
+
+    public static void show1()
+    {
+        System.out.println("Static Method");
+
+       // System.out.println(Name + " ," + Name1+ ":" + price + ":" + brand);
+        //non-static variable brand, Name , price cannot be referenced from a static context 
+        // can't use them directly in static method
+
+    } 
+
+    public static void show2(Mobile obj)
+    {
+        System.out.println("Static Method");
+        System.out.println(obj.Name + " ," + obj.Name+ ":" + obj.price + ":" + obj.brand);
+       
+    }
+
 }
 
-public class Static_Method 
+
+public class Static_Method    // here the main method is starting point of execution and this is static 
+// method because to call it we don't need the object of it's class Static_Method 
 {   
     public static void main(String a[])
     {
@@ -46,6 +68,10 @@ public class Static_Method
             obj1.show();
             obj2.show();
 
+            //Mobile.show(); //Cannot make a static reference to the non-static method show() from the type Mobile
+            Mobile.show1(); // Static Method
+
+            Mobile.show2(obj2);
     }
 
     
