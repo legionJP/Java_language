@@ -1,6 +1,5 @@
-package OOP_concept;
+package OOP_concept.Static_Methods;
 
-// Static Varibale
 
 class Mobile
 {
@@ -10,6 +9,8 @@ class Mobile
 
     // If the String Name var is changed to static var. than the all other obj will share the same value
     // of the Name var bcz it will be static var, if it is changed by obj1 or 2 it will be samee
+    
+// Static Varibale
     static String Name1;
 
     public void show()
