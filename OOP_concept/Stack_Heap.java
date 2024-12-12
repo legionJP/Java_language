@@ -1,8 +1,25 @@
 // Memory Management in the Java by JVM 
 // Stack and Heap
 
-
 package OOP_concept;
+
+
+class Calculator   
+{   
+    int num =8;  // this is instance var.
+
+    public int add(int n1, int n2) // Every Method will Have it's Own Stack
+     // n1 and n2 is local vaibale
+    {
+        return  n1+n2;
+    }
+
+    public double add(double n1 , int n2) // Every Method will Have it's Own Stack
+    {
+        return n1+n2;
+    }
+}
+
 
 public class Stack_Heap
 {   
@@ -23,22 +40,6 @@ public class Stack_Heap
         // These obj and if new obj1 will not affect the each other
     }    
 
-}
-
-class Calculator   
-{   
-    int num =8;  // this is instance var.
-
-    public int add(int n1, int n2) // Every Method will Have it's Own Stack
-     // n1 and n2 is local vaibale
-    {
-        return  n1+n2;
-    }
-
-    public double add(double n1 , int n2) // Every Method will Have it's Own Stack
-    {
-        return n1+n2;
-    }
 }
 
 

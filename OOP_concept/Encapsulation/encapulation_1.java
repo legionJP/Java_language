@@ -1,6 +1,5 @@
 package OOP_concept.Encapsulation;
 
-
 class Human
 {   
      String clg;
