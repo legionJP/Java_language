@@ -52,5 +52,5 @@ class Calculator
  * We can have the same name of methods but only requirement is that they should
  * have the different number of parameter. OR
  * the parameter can also be the same number of parameter but different Types.
- * Thius concept is called the method Overloading.
+ * This concept is called the method Overloading.
  */

@@ -1,4 +1,4 @@
-package OOP_concept.Inheritence;
+package OOP_concept.Inheritance;
 
 
 class Calc{
