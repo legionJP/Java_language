@@ -2,6 +2,6 @@
 
 - Java Programming concept 
 
-# 
+ 
 >[!NOTE]
-> Work in Progress !
+> In Progress !
