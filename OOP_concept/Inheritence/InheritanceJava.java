@@ -1,7 +1,6 @@
 package OOP_concept.Inheritence;
 
 
-
 class Calc{
     public int add(int n1, int n2)
     {
