@@ -10,10 +10,10 @@ public class QuestionService{
 
     public QuestionService()
     {
-        questions[0] = new Questions(1,"What are you Studying !", "java", "cpp", "Python", "JavaScript","Java");
-        questions[1] = new Questions(2,"What are you Studying !", "java", "cpp", "Python", "JavaScript","Java");
-        questions[2] = new Questions(3,"What are you Studying !", "java", "cpp", "Python", "JavaScript","Java");
-        questions[3] = new Questions(4,"What are you Studying !", "java", "cpp", "Python", "JavaScript","Java");
+        questions[0] = new Questions(1,"What are you Studying !", "java", "cpp", "Python", "javaScript","java");
+        questions[1] = new Questions(2,"What are you Studying !", "java", "cpp", "Python", "javaScript","java");
+        questions[2] = new Questions(3,"What are you Studying !", "java", "cpp", "Python", "javaScript","java");
+        questions[3] = new Questions(4,"What are you Studying !", "java", "cpp", "Python", "javaScript","java");
       
 
     }
@@ -42,6 +42,22 @@ public class QuestionService{
         {
             System.out.println(s);
         }  
+    }
+
+    public void printScore()
+    {
+        int score =0;
+        for(int i=0; i<questions.length; i++)
+        {
+            Questions que = questions[1];
+            String actualAnswer = que.getAnswer();
+            String userAnswer = selection[i];
+            if(actualAnswer.equals(userAnswer))
+            {
+                score++;
+            }
+        }
+        System.out.println("Your score is : "+ score);
     }
 
 }

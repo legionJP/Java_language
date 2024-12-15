@@ -6,5 +6,7 @@ public class Practice1Main {
 
         QuestionService service = new QuestionService();
         service.playQuiz();
+
+        service.printScore();
     }
 }
