@@ -46,7 +46,7 @@ class Laptop {
 //     Laptop other = (Laptop) obj;
 //     if (model == null) {
 //         if (other.model != null)
-//             return false;
+//             return false;`
 //     } else if (!model.equals(other.model))
 //         return false;
 //     if (price != other.price)
