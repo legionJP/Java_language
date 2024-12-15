@@ -33,13 +33,14 @@ class Mobile1{
             System.out.println(brand + " "+ name + " "+ price );
         }
 }
+
 public class Static_Block {
     public static void main(String a[]) throws ClassNotFoundException
     {   
         // Only load the class without creating object
-        Class.forName("Mobile1");
+       // Class.forName("Mobile1");
         
-        // Mobile1 obj1 = new Mobile1();
+        Mobile1 obj1 = new Mobile1();
 
         // obj1.brand = "Apple";
         // obj1.price = 67891;
