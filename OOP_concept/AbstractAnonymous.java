@@ -28,3 +28,4 @@ public class AbstractAnonymous {
 
 
 // Implementing the method for the abstract class and and method using the inner Class
+
