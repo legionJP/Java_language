@@ -51,7 +51,7 @@ public class Static_Method    // here the main method is starting point of execu
             obj1.brand= "Samsung";
             obj1.price = 234567;
             obj1.Name = "Smart Phone";
-            obj1.Name1 = "Phone";
+            obj1.Name1 = "Phone"; // Name1 should be accessed in a static way
 
             Mobile obj2 =new Mobile();
 
@@ -63,7 +63,7 @@ public class Static_Method    // here the main method is starting point of execu
             Mobile.Name1 = "Smart Phone";  // calling in the static way
 
 
-            obj1.Name1 ="Mobile Phone";  // Will be changed to everyone
+            obj1.Name1 ="Mobile Phone";  // It Will be changed in the every method
             // Just call the Name1 by the class name not by the obj name
 
             obj1.show();

@@ -4,7 +4,7 @@
 package OOP_concept;
 
 
-class Calculator   
+class Calculator1   
 {   
     int num =8;  // this is instance var.
 
@@ -30,9 +30,10 @@ public class Stack_Heap
         System.out.println(a1); // Local var.
 
 
-        Calculator obj = new Calculator();
+        Calculator1 obj = new Calculator1();
         int r1 =obj.add(1,2);
         System.out.println(r1);
+        System.out.println(obj.num);
 
         // obj.num=8;
         //System.out.println(obj.num);   // Giving the error 

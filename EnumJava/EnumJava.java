@@ -1,10 +1,34 @@
 package EnumJava;
 
+
+enum Status {
+    PENDING, APPROVED, REJECTED
+}                               
+// Enum is a special class in Java that represents a group of constants (unchangeable variables, like final variables).
+// In enum the Status is here class and PENDING, APPROVED, REJECTED are the objects of the class Status
+
 public class EnumJava
 {
     public static void main(String[] args)
     {
         System.out.println(" Enum in Java ");
+
+        int i =5;
+        Status s = Status.APPROVED;
+        Status s1 = Status.PENDING;
+
+        System.out.println(s);
+        System.out.println(s.ordinal());
+        System.out.println(s1);
+        System.out.println(s1.ordinal());
+        System.out.println(Status.REJECTED);
+
+        // Printing all the values of the Enum
+        Status [] sa = Status.values();
+        for(Status st: sa)
+        {
+            System.out.println(st + " : " + st.ordinal());
+        }
 
     }
 }
