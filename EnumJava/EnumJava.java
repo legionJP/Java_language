@@ -6,6 +6,7 @@ enum Status {
 }                               
 // Enum is a special class in Java that represents a group of constants (unchangeable variables, like final variables).
 // In enum the Status is here class and PENDING, APPROVED, REJECTED are the objects of the class Status
+// can't extends the enum with another class
 
 public class EnumJava
 {
