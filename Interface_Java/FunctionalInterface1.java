@@ -5,7 +5,7 @@ package Interface_Java;
 interface  A              // functionalInterface
 {
     void show();
-    // void display();   // if we add the another method then it will give the error
+    // void display();   // if we add the another method then it will give the error bcz the functional interface has only one abstract method
 }
 
 
