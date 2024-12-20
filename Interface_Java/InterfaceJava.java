@@ -169,3 +169,26 @@ interface to interface ----> it extends
  * 
  * 
  */
+// Types of Interface in Java
+
+/*
+ * There are two types of interfaces in Java:
+ *  1. Normal Interface
+ * 1.-->  where we have two or multiple methods called as normal interface
+ * 
+ * 2. Funccional Interface (SAM) --> Single Abstract Method
+ * 2.-->  where we have only one method called as functional interface
+ * 
+ * 3. Marker Interface
+ * -->  where we have no method called as marker interface, or blank interface
+ * 
+ * -->  Example: Serializable, Clonable, Remote, RandomAccess
+ * --> Serialization is the process of converting the state of an object into a byte stream.
+ * --> Deserialization is the process of converting the byte stream into an object.
+ * --> give the permisssion by the help of class to the JVM to do the serialization and deserialization
+ *  
+ *  
+ *  
+ *  
+ *  
+*/
