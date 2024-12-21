@@ -12,9 +12,18 @@ class Msg extends Thread
     // public void display()
     public void run()
     {
-        for(int i=1; i<=1000;i++)  // if we have the multiple threads then the output will be the mixed output
+        for(int i=1; i<=100;i++)  // if we have the multiple threads then the output will be the mixed output
         {
             System.out.println("HI");
+
+            // // sleeping the thread for some second
+            // try {
+            //     Thread.sleep(1000);  // 1000 milliseconds = 1 second
+            // } catch (InterruptedException e) {
+            //     e.printStackTrace();
+            // }
+           
+
         }
     }
 
@@ -26,7 +35,7 @@ class Body extends Thread
     // public void display()
     public void run()
     {
-        for(int i=1; i<=1000;i++) // if we have the multiple threads then the output will be the mixed output
+        for(int i=1; i<=100;i++) // if we have the multiple threads then the output will be the mixed output
         {
             System.out.println("What are you doing");
         }
@@ -50,8 +59,25 @@ public class ThreadsJava {
         Body obj2 = new Body();
         // obj1.display();
         // obj2.display();
+
+        System.out.println(obj1.getPriority());  // 5
+
+// Set the priority of the thread
+
+         obj1.setPriority(10);  // 10 is the maximum priority
+        // obj1.setPriority(Thread.MIN_PRIORITY);  // 1 is the minimum priority
+        // obj1.setPriority(Thread.MAX_PRIORITY);  // 10 is the maximum priority
+
         obj1.start();
+        try {
+            Thread.sleep(1000);  // 10 milliseconds
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         obj2.start();
+
+        //  you can't controll the schedular but  you can only suggest the scheduler to run the thread first but the scheduler will decide which thread to run first
       
     }
 }
