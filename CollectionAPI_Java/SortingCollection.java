@@ -79,7 +79,7 @@ public class SortingCollection {
  // using the  lambda and ternary 
 
        // Comparator<Students> comps =(i,j) -> i.age >  j.age?1:-1;
-       
+
 // OR
         Comparator<Students> comps = new Comparator<Students>() {
             public int compare(Students i, Students j)
@@ -95,7 +95,8 @@ public class SortingCollection {
     }
 }
 
-// class Students implements Comparable<Students>  // use the comparable to sort by the class itself by implementing the Tocompare
+// use the comparable to sort by the class itself by implementing the compareTo method of the Comparable
+// class Students implements Comparable<Students>  
 class Students{
     int age;
     String name;
