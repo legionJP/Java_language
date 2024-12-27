@@ -19,7 +19,7 @@ public class SortingCollection {
         Collections.sort(nums);
         System.out.println(nums);
 
-// Sorting using the Collections based on the other logic like based on unit digit of the number
+// Sorting using the Collections based on own logic
 
         Comparator<Integer> comp = new Comparator<Integer>() {
             public int compare(Integer i, Integer j)  // has to use the class Integer as collection comparator work with the wrapper class
@@ -58,7 +58,7 @@ public class SortingCollection {
         System.out.println(nameList);
 
 
-// Sorting String array with the help of the length of the String array
+// Sorting String array with the help of the length of the String array using the sprate
 
         List<Students> numStudents = new ArrayList<>();
         numStudents.add(new Students(22, "Suresh"));
