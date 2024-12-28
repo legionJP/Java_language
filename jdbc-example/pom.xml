@@ -26,6 +26,12 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
+        <!-- Json Processing lib (json-simple) for json file -->
+        <dependency>
+        <groupId>com.googlecode.json-simple</groupId>
+        <artifactId>json-simple</artifactId>
+        <version>1.1.1</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
@@ -48,6 +54,27 @@
                             <addClasspath>true</addClasspath>
                             <mainClass>com.example.App</mainClass>
                         </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <!-- Add Maven Shade Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.2.4</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>shade</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <archive>
+                        <manifestEntries>
+                            <Main-Class>com.example.App</Main-Class>
+                        </manifestEntries>
                     </archive>
                 </configuration>
             </plugin>

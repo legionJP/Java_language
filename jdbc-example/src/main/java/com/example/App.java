@@ -1,25 +1,39 @@
 package com.example;
+import java.io.FileReader;
+import java.io.IOException;
 import java.sql.*;
+import java.text.ParseException;
 
-/**
- * Hello world!
- *
- */
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+
 public class App 
 {
-    public static void main( String[] args ) throws ClassNotFoundException
+    public static void main( String[] args ) throws ClassNotFoundException, SQLException , ParseException, IOException, org.json.simple.parser.ParseException
     {
-        System.out.println( "Hello World!" );
+        // System.out.println( "Hello World!" );
 
         // load and register
         Class.forName("org.postgresql.Driver");
 
+        // Read the configuration file: 
+        JSONParser parser = new JSONParser();
+        JSONObject config = (JSONObject) parser.parse(new FileReader("/etc/config_db.json"));
 
-        // create the connection // Connection is interface so DriverManager is utility and has the getconnection 
-        String url = "jdbc::postgresql://localhost:5432/jdatabase";
-        String uname = "javajp";
-        String pass = "Thisisjdatabase";
-        Connection con = DriverManager.getConnection(url, uname,pass);
+        // Extract the connection details
+
+        String url = (String) config.get("url");
+        String uname = (String) config.get("username");
+        String pass = (String) config.get("password");
+
+        // OR
+        
+        // // create the connection // Connection is interface so DriverManager is utility and has the getconnection 
+        // String url = "jdbc:postgresql://localhost:5432/jdatabase";
+        // String uname = "user";
+        // String pass = "password";
+        Connection con = DriverManager.getConnection(url,uname,pass);
         System.out.println("Connection is Successful");
 
         // connection url is the databse number 
