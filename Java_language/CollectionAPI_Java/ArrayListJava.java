@@ -11,6 +11,7 @@ public class ArrayListJava {
         // Collection API  belongs to the java.util package
 // Collection API is a framework that provides the architecture to store and manipulate the group of objects
 
+        @SuppressWarnings("rawtypes")
         Collection nums0 = new ArrayList();
         nums0.add(1);
         nums0.add(2);
