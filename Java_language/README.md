@@ -51,7 +51,27 @@ it will show tha changes in the files
 + git push -u origin main
 
 -https
-+
++ clone and set the global config and use the fine grade token or password
+
+- Git push 
++ git push origin main 
+ check origin 
++ git remote -v
+
+- Git Tag
+
++ Vesrion no is tag
+- git tag :  {Show all the given tag}
+
++ add tag
+- git tag -a v1.0 -m "!st release"
+
++ info about tag
+- git show v1.0
+
++ push the tag
+git push  origin v1.0 
+
 
 ```
 
