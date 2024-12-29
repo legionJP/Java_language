@@ -58,7 +58,9 @@ it will show tha changes in the files
  check origin 
 + git remote -v
 
+- ---------------------------------------------------------------------------
 - Git Tag
+- --------------------------------------------------------------------------
 
 + Vesrion no is tag
 - git tag :  {Show all the given tag}
@@ -71,6 +73,88 @@ it will show tha changes in the files
 
 + push the tag
 git push  origin v1.0 
+
+- ---------------------------------------------------------------------------
+- Git Branch 
+- --------------------------------------------------------------------------
+
+- Branch Create 
++ git checkout -b  branch2 {create the new branch}
++ git switch -c feature1  {create}
+
++ git switch branch2
++ git branch {will list the active and all branch }
++ git branch --all
+
+- Delete Branch 
++ git branch -d branch2
++ 
+
+- Git Push Branch to Remote
++ git push origin branch2 
+
+- Git Branch Workings 
++ when  file create/ commit git create the sanpshot file and give the checksum of the commit
++ main points to the commit and Head to the new branch or commit 
++ git log 
++ git graph
+
+
+- ---------------------------------------------------------------------------
+- Git Merge
+- --------------------------------------------------------------------------
+
+- git merge branch_name 
++(must be on the main branch to merge other branch on main)
++ always pull the first changes from the remote 
+
+- --------------------------------------------------------------------------
+- Git Rebase
+
++ In rebase you will not see the history of the other or merged branch
++ git log will show the one line commit history 
+
++ git rebase feature1 
+merge with new branch 
+
+- ---------------------------------------------------------------------------
+- Git Merge Conflict
+- --------------------------------------------------------------------------
+
++ when the two file are changed same time by different branch or by remote or local conflict will rise
+
+- git merge feature1 
+
+- <<<< current changes 
+- >>>> incoming changes
+- git diff feature 1 
+- {then open file and accept changes }
+- git addd . 
+- git commit -a
+- git push 
+- git pull origin main 
+
++ When conflict rise choose one 
+: 1. git config pull.rebase false  #merge 
+: 2. git config pull.rebase true  #rebase
+: 3. git config pull.f only     # fast-forward only
+
+## Now commit the merge
+- git status 
+- git add .
+- git commit -m "merge"
+
+
+ ---------------------------------------------------------------------------
+- Git Time Travel
+- --------------------------------------------------------------------------
+
+- git log
+pick the older commit 
+- commit 141be21c987dbc5b55c408120ed72ff9bd205090 (tag: v1.0)
+
+go to older commit  # the HEAD is detached 
+- git checkout  141be21c987dbc5b55c408120ed72ff9bd205090 (tag: v1.0)
 
 
 ```
