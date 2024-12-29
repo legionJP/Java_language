@@ -155,6 +155,33 @@ pick the older commit
 
 go to older commit  # the HEAD is detached 
 - git checkout  141be21c987dbc5b55c408120ed72ff9bd205090 (tag: v1.0)
+- add the new branch 
+- commit the chanegs 
+- and push and merge the pull reqiuest
+
+
+ ---------------------------------------------------------------------------
+- Git Stash
+- --------------------------------------------------------------------------
+
++ git stash , when you are working and don't want to push them 
++ it saves the changes without commiting them 
+
+- git stash 
++ save the working directory 
+- git stash apply
++ go to main branches and commit the changes 
++ show to another branch where the stash is applied 
+
+---------------------------------------------------------------------------
+- Git Fork
+- --------------------------------------------------------------------------
+
++ Fork and make changes in your git account branch 
+
+- Git Pull Request 
+
++ after the fork make the changes in forked branched and  create the pull request of the changes.
 
 
 ```
