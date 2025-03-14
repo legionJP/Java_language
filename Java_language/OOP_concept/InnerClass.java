@@ -24,7 +24,7 @@ public class InnerClass {
         
         // object of inner class B
 
-        A.B objB = objA.new B();   /
+        A.B objB = objA.new B();
         objB.config();
     }
 }
