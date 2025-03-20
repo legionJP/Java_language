@@ -1,5 +1,11 @@
 package Array;
 
+class Students{
+    int rollno;
+    String name;
+    int  marks;   //instance var bcz belongs to class
+}
+
 public class ArrayOf_Object {
     public static void main(String a[])
     {
@@ -62,13 +68,8 @@ public class ArrayOf_Object {
     }
 }
 
-class Students{
-    int rollno;
-    String name;
-    int  marks;   //instance var bcz belongs to class
-}
 
-// Drwa Backs Of Array
+// Draw Backs Of Array
 /*
  * Array in java is object and creats inside the heap memory and 
  * takes the space continuously and can't expand the size it is fixed

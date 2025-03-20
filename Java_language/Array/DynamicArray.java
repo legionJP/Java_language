@@ -41,12 +41,21 @@ public class DynamicArray {
         }
         return arr[length];
     }
-    // resize the array
-    
-    public static void main(String args[])
-    {
-        int[] capacity =
+    // resize the array with the double capacity
+    public void resize(){
+        capacity = 2*capacity;
+        int[] newArr = new int[capacity];
+        for(int i=0;i<=length;i++){
+            newArr[i]=arr[i];
 
+        }
+        arr = newArr;
+    }
+    public int getSize(){
+        return length;
+    }
+    public int getCapacity(){
+        return capacity;
     }
     
 }
