@@ -1,0 +1,26 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- master
+
+pool:
+  vmImage: ubuntu-latest
+
+# steps:
+# - script: echo Hello, world!
+#   displayName: 'Run a one-line script'
+
+# - script: |
+#     echo Add other tasks to build, test, and deploy your project.
+#     echo See https://aka.ms/yaml
+#   displayName: 'Run a multi-line script'
+steps:
+- task: checkmarx.checkmarx-ast-azure-plugin.cx-scan-task.Checkmarx AST@3
+  displayName: 'Checkmarx AST'
+  inputs:
+    CheckmarxService: 'AST_Test'
+    tenantName: 'test_naftali'
+    additionalParams: '--sca-resolver "C:\ScaResolver\ScaResolver.exe" --sca-resolver-params " --log-level Debug --extract-archives jar --extract-depth 0"'
