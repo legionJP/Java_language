@@ -1,0 +1,42 @@
+# Next Topics to be Reviewed and added in the Repo
+
+## 1. Java Module System (JPMS)
+   - Understanding modules in Java 9 and above
+   - Benefits of using modules
+   - Creating and using modules
+
+## 2. Functional Programming in Java
+   - Lambdas and Streams overview
+   - Higher-order functions
+   - Optional class usage
+
+## 3. Improved Performance with JVM Tuning
+   - Understanding JVM memory management
+   - Garbage collection tuning
+   - Profiling Java applications
+
+## 4. Java Annotations
+   - Custom annotation creation
+   - Application of annotations in frameworks (like Spring)
+   - Use cases for annotations in Java
+
+## 5. Microservices with Spring Boot
+   - Building RESTful APIs
+   - Service discovery and load balancing
+   - API Gateway patterns
+
+## 6. Java Security Practices
+   - Overview of Java security features
+   - Best practices for secure coding
+   - OWASP guidelines application in Java
+
+## 7. Testing with JUnit 5
+   - New features in JUnit 5
+   - Writing tests and best practices
+   - Integration testing with Spring
+
+## 8. Data Persistence with JPA and Hibernate
+   - In-depth look at JPA
+   - Using Hibernate as a JPA provider
+   - Best practices for object-relational mapping
+
